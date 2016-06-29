@@ -5,7 +5,7 @@
 #define ARLog(format, ...) if ([[[NSProcessInfo processInfo] environment][@"AUTORETRY_LOGGING"] intValue] == 1) { NSLog(format, ## __VA_ARGS__); }
 
 #import <Foundation/Foundation.h>
-#import "AFHTTPSessionManager.h"
+#import <AFNetworking/AFHTTPSessionManager.h>
 
 #pragma clang diagnostic push
 #pragma ide diagnostic ignored "OCUnusedMethodInspection"
